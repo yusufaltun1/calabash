@@ -1,9 +1,9 @@
 <project name="Test" default="login" basedir=".">
-	<property name="PathAndroidPath" location="" />
+	<property name="PathAndroidPath" location="/Users/yusufaltun/calabash/mfandroid-debug.apk" />
 	
 	<target name="login1">
 		<exec executable="/bin/sh" os="Mac OS X">
-			<arg line="/c calabash-android run ${PathAndroidPath} " />
+			<arg line="/c calabash-android run ${PathAndroidPath} -p android features/1.step.feature --format json -o cucumber.json --tags @Logg" />
 		</exec>
 	</target>
 </project>
