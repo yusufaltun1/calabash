@@ -1,0 +1,9 @@
+<project name="Test" default="login" basedir=".">
+	<property name="PathAndroidPath" location="" />
+	
+	<target name="login1">
+		<exec dir="./" executeble="cmd">
+			<arg line="/c calabash-android run ${PathAndroidPath} " />
+		</exec>
+	</target>
+</project>
