@@ -2,7 +2,7 @@
 	<property name="PathAndroidPath" location="" />
 	
 	<target name="login1">
-		<exec dir="./" executeble="terminal">
+		<exec executable="/bin/sh" os="Mac OS X">
 			<arg line="/c calabash-android run ${PathAndroidPath} " />
 		</exec>
 	</target>
