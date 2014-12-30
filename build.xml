@@ -3,7 +3,7 @@
 	
 	<target name="login1">
 		<exec executable="calabash-android" os="Mac OS X">
-			<arg line="run ${PathAndroidPath} features/1step.feature --format json --tags @Login12" /> 
+			<arg line="run ${PathAndroidPath} features/1step.feature --format json -o cucumber.json --tags @Login12" /> 
 		</exec>
 	</target>
 </project>
