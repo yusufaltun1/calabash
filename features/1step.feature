@@ -1,5 +1,6 @@
 Feature: Category
 
+@Login12
  Scenario: Category
     Then I wait for "Atla" to appear
     Then I wait for a second
