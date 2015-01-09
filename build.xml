@@ -1,4 +1,4 @@
-<project name="Test" default="login1" basedir=".">
+<project name="Test" default="loginTest" basedir=".">
 	<property name="PathAndroidPath" location="/Users/yusufaltun/calabash/mfandroid-debug.apk" />
 	
 	<target name="loginTest">
