@@ -1,14 +1,13 @@
-<project name="Test" default="loginTest" basedir=".">
+<project name="Test" default="category" basedir=".">
 	<property name="PathAndroidPath" location="/Users/yusufaltun/calabash/mfandroid-debug.apk" />
 	
-	<target name="loginTest">
+	<target name="category">
 		<exec executable="calabash-android" os="Mac OS X">
-			<arg line="run ${PathAndroidPath} features/1step.feature --format json -o cucumber.json --tags @loginTest" /> 
+			<arg line="run ${PathAndroidPath} features/1step.feature --format json -o cucumber.json --tags @category" /> 
 		</exec>
-	</target>
-	<target name="categoryTest">
 		<exec executable="calabash-android" os="Mac OS X">
-			<arg line="run ${PathAndroidPath} features/1step.feature --format json -o cucumber.json --tags @categoryTest" /> 
+			<arg line="run ${PathAndroidPath} features/1step.feature --format json -o cucumber.json --tags @login" /> 
 		</exec>
-	</target>
+
+	</target>  
 </project>
